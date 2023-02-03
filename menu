@@ -1,0 +1,13 @@
+ whiptail \
+  --menu "Zimbra" 10 35 2 \
+  "Bash" "OpenVPN" \
+  "Zsh"  "(Z-Shell)"
+
+
+ssh -i "AnandaAws.pem" ec2-3-17-155-7.us-east-2.compute.amazonaws.com
+
+dialog --radiolist "Select items:" 0 0 0 \
+  1 "Zimbra" on  \
+  2 "OpenVPN" off \
+  3 "Amazon AWS" off \
+  4 "Vmware" off
